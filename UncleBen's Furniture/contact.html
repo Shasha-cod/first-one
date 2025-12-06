@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uncle Ben Furniture - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Sticky Header */
+    nav.contact-nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px  10px;
+    position: sticky;
+    top: 0;
+    background-color:  #2c3e50;
+    z-index: 10;
+    color: white;
+  }
+  
+
+    nav.contact-nav h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    nav.contact-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.contact-nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav.contact-nav ul li a:hover {
+      color: #f39c12;
+    }
+
+     /* Contact Info Sections */
+    .contact-section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .contact-box p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+     .contact-box a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Centered Contact Form */
+    
+
+    /* Sticky Footer */
+    footer {
+      position: sticky;
+      bottom: 0;
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 14px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="contact-nav">
+    <h1>Uncle Ben Furniture</h1>
+    <ul>
+       <li><a href="index.html.html" class="nav-link">Home</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+       <li><a href="aboutus.html" class="nav-link">About</a></li>
+      
+         
+    </ul>
+  </nav>
+
+   <div class="contact-section">
+    <div class="contact-box" id="phone">
+      <h2>WhatsApp Us</h2>
+      <p>
+  <a href="https://wa.me/233549920548">💬 Chat on WhatsApp</a>
+</p>
+    </div>
+
+    <div class="contact-box" id="email">
+      <h2>✉️ Email</h2>
+      <p>Email: <a href="mailto:contact@charllotetegah1@gmail.com">contact@charllotetegah1gmail.com</a></p>
+    </div>
+
+    <div class="contact-box" id="location">
+      <h2>📍Click to Visit Us </h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126996.85349902416!2d-1.077570273518816!3d5.904448058033261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sccheckpoint%20akim!5e0!3m2!1sen!2sgh!4v1761994388029!5m2!1sen!2sgh" width="420" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p> Uncle Ben Furniture, Check point, Akim- Oda, Ghana</p>
+    </div>
+  </div>
+
+  
+  <footer>
+    &copy; 2025 Uncle Ben Furniture. All rights reserved.
+  </footer>
+</body>
+</html>

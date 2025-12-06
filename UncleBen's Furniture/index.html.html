@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uncle Ben's Furniture</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="main-navbar">
+
+    <figure>
+      <h2>UNCLE BEN FURNITURE</h2>
+    </figure>
+    <nav id="nav-icons">
+      <li><a href="index.html.html" class="nav-link">Home</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+       <li><a href="aboutus.html" class="nav-link">About</a></li>
+       
+        <div class="cart-container">
+            <img src="Images/cart-icon.jpg" alt="Cart" class="cart-icon">
+            <span class="cart-count">0</span>
+          </div>
+    </nav>
+  </nav>
+  
+
+  <section class="products">
+    <div class="product">
+      <img src="Images/sofa.jpg" alt="Cozy Sofa">
+      <h2>Cozy Sofa</h2>
+      <p>$250</p>
+      <button onclick="addToCart('Cozy Sofa',290)">Add to Cart</button>
+      <button onclick="removeFromCart('Cozy Sofa')">Remove from Cart</button>
+      <a href="cozysofa.html"> <button onclick>Click for more</button></a>
+    </div>
+
+    <div class="product">
+      <img src="Images/pink.jpg" alt="Modern Armchair">
+      <h2>Modern Armchair</h2>
+      <p>$180</p>
+      <button onclick="addToCart('Modern Armchair',180)">Add to Cart</button>
+      <button onclick="removeFromCart('Modern Armchair')">Remove from Cart</button>
+      <a href="armchair.html"> <button onclick>Click for more</button></a>
+    </div>
+
+   
+
+      <div class="product">
+        <img src="Images/executive-chair.png" alt="Executive-chair">
+        <h2>Executive-chair</h2>
+        <p>$300</p>
+        <button onclick="addToCart('Executive-chair',70)">Add to Cart</button>
+        <button onclick="removeFromCart('Executive-chair')">Remove from Cart</button>
+        <a href="executivechair.html"><button onclick>Click for more</button></a>
+      </div>
+
+
+      <div class="product">
+        <img src="Images/desk.jpg" alt="Desk">
+        <h2>Desk</h2>
+        <p>$180</p>
+        <button onclick="addToCart('Desk',180)">Add to Cart</button>
+        <button onclick="removeFromCart('Desk')">Remove from Cart</button>
+       <a href="desk.html"><button onclick>Click for more</button></a>
+      </div>
+
+      <div class="product">
+        <img src="Images/war5.webp" alt="Wardrobe">
+        <h2>Wardrobe</h2>
+        <p>$400</p>
+        <button onclick="addToCart('Wardrobe',400)">Add to Cart</button>
+        <button onclick="removeFromCart('Wardrobe')">Remove from Cart</button>
+       <a href="wardrobe.html"> <button onclick>Click for more</button></a>
+      </div>
+
+
+      <div class="product">
+        <img src="Images/dining-table.jpg" alt="Dining-table">
+        <h2>Dining-table</h2>
+        <p>$350</p>
+        <button onclick="addToCart('Dining-table', 400)">Add to Cart</button>
+        <button onclick="removeFromCart('Dining-table')">Remove from Cart</button>
+       <a href="diningtable.html"> <button onclick>Click for more</button></a>
+      </div>
+    </section>
+  
+     <div class="product-card">
+  <h3>Classic Wooden Chair</h3>
+  <p>Elegant and durable. Perfect for any room.</p>
+  <a href="tel:+233549920548" class="call-button">Call to Order</a>
+</div>
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+
+        <div id="popupMessage" class="popup-message">Item added to cart!</div>
+        <div id="popupMessages" class="popup-messages">Item Remove to cart!</div>
+  
+    </section>
+ <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Uncle Ben’s Furniture. All rights reserved.</p>
+  </div>
+</footer>
+
+       
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uncle Ben's Furniture</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #181717;
+      color: #e5d7d7;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1582582494700-7e0c9b7b2a6e') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: c enter;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #A0522D;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: hsl(0, 19%, 85%);
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    /* Popup styles */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .popup-content h3 {
+      margin-top: 0;
+      color: #0d0d0d;
+    }
+
+     .popup-content h5 {
+      margin-top: 0;
+      color: #0d0d0d;
+    }
+    
+    .popup-content button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup-content button:hover {
+      background-color: #0f0f0f;
+    }
+
+    #successPopup {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- Welcome Popup -->
+  <div class="popup" id="welcomePopup">
+    <div class="popup-content">
+      <h3>Welcome to Uncle Ben's Furniture!</h3>
+      <h5>Discover timeless pieces for your home. Sign in to unlock exclusive deals.</h5>
+      <button onclick="closePopup('welcomePopup')">Let's Go</button>
+    </div>
+  </div>
+
+  <!-- Success Popup -->
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <h3>Sign-in Successful!</h3>
+     <a href="index.html.html">  <button onclick="closePopup('successPopup')">Continue</button></a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Welcome to Uncle Ben's Furniture</h1>
+  </header>
+
+  <div class="content">
+    <p>Sign in to explore our exclusive collection and enjoy personalized offers.</p>
+
+    <form onsubmit="showSuccessPopup(event)">
+      <input type="text" name="firstname" placeholder="Firstname" required />
+      <input type="text" name="lirstname" placeholder="Lirstname" required />
+      <input type="text" name="enter your gmail" placeholder="Enter your gmail" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="submit" value="Sign In" />
+    </form>
+    <h5>Must be at least 8 characters and includes one special characters</h5>
+  </div>
+
+  <footer>
+    &copy; 2025 Uncle Ben's Furniture. All rights reserved.
+  </footer>
+
+  <script>
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    function showSuccessPopup(event) {
+      event.preventDefault(); // Prevent actual form submission
+      closePopup('welcomePopup'); // Close welcome popup if still open
+      document.getElementById('successPopup').style.display = 'flex';
+    }
+
+    // Show welcome popup on page load
+    window.onload = function() {
+      document.getElementById('welcomePopup').style.display = 'flex';
+    }; 
+  </script>
+
+</body>
+</html>

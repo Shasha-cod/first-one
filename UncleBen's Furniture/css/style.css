@@ -1,0 +1,620 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #fdf9f3;
+    color: #111010;
+  }
+  /* sticky header*/
+  header {background-color: #2c3e50;
+    color: rgb(248, 233, 233);
+    padding: 8px 8px;
+    height: 25vh;
+    text-align: center;
+    position: sticky;
+
+  }
+  /*home page header*/
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px  10px;
+    position: sticky;
+    top: 0;
+    background-color:  #2c3e50;
+    z-index: 10;
+    color: white;
+  }
+
+  #nav-icons{
+    display: flex;
+    list-style: none;
+  }
+
+  /*img.logo*/
+  img.logo {
+    max-width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+  }
+
+  /* cart count container*/
+  .cart-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(156, 117, 93);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 4px 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .cart-count.bump {
+    transform: scale(1.2);
+  }
+  
+  
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 250px;
+    margin: 1em;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    background-color: #b96e48;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #8a4c2f;
+  }
+  
+  /* Basic styling for contact us */
+  
+  
+/* About Us Section */
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sticky Header */
+    .main-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #2c3e50;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .main-nav ul {
+       list-style: none;
+  display: flex;
+  gap: 1.5rem;
+    }
+
+.main-nav a {
+     text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    
+    .main-nav a:hover {
+      color: #f39c12;
+    }
+
+/* Main Content */
+main.about-section {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.about-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.about-section h2 {
+  margin-top: 2rem;
+  color: #34495e;
+}
+
+.about-section p,
+.about-section ul {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.about-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-section {
+  animation: fadeIn 1s ease-out;
+}
+
+
+/* Footer */
+.site-footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+.site-footer .social-links a {
+  color: #f4b400;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.site-footer .social-links a:hover {
+  color: white;
+}
+
+
+/* cozysofa styling */
+.sofas {
+display: flex;
+  justify-content: space-around; /* centers the cards horizontally */
+  padding: 2em;    /* space between cards */
+  flex-wrap: wrap;   /* lets it break to next line on smaller screens */
+}
+
+.sofa-card {
+background: white;
+border: 1px solid #ddd;
+  padding: 1em;
+  width: 250;
+  margin: 1em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.sofa-card img { 
+ max-width: 100%;
+  height: 200px;
+  
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button, .more {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.more {
+  background-color: #d0eaff;
+}
+
+
+/* armchair styling*/
+.armchairs {
+  display: flex;
+    justify-content: space-around; /* centers the cards horizontally */
+    padding: 2em;    /* space between cards */
+    flex-wrap: wrap;   /* lets it break to next line on smaller screens */
+  }
+  
+  .armchair-card {
+  background: white;
+  border: 1px solid #ddd;
+    padding: 1em;
+    width: 250;
+    margin: 1em;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .armchair-card img { 
+    max-width: 100%;
+    height: 200px;
+    
+  }
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button, .more {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.more {
+  background-color: #d0eaff;
+
+}
+
+/* executive chair styling*/
+.executivechairs {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.executivechair {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1em;
+  width: 250px;
+  margin: 1em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.executivechair-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button, .more {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.more {
+  background-color: #d0eaff;
+
+}
+
+/* desk styling*/
+.desks {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.desk-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1em;
+  width: 250px;
+  margin: 1em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.desk-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button, .more {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.more {
+  background-color: #d0eaff;
+
+}
+/* wardrobe styling*/
+.wardrobes {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.wardrobe-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1em;
+  width: 250px;
+  margin: 1em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.wardrobe-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button, .more {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.more {
+  background-color: #d0eaff;
+
+}
+
+/* dining table styling*/
+.diningtables {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.diningtable-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1em;
+  width: 250px;
+  margin: 1em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.diningtable-card img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button, .more {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.more {
+  background-color: #d0eaff;
+
+}
+/*animate*/
+
+/*popupmsg added*/
+.popup-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+/* When visible */
+.popup-message.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/*popup msg remove*/
+.popup-messages {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+/* When visible */
+.popup-messages.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+/* footer styling*/
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:  #2c3e50;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  text-align: center;
+  z-index: 100;
+}
+
+.call-button {
+  display: inline-block;
+  background-color:  #4347a0;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #282937;
+}
+
+
+
+ 
+
+    
